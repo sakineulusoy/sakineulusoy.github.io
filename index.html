@@ -6,35 +6,51 @@ and open the template in the editor.
 -->
 <html>
     <head>
-    <title>CS102</title>
-    <style>
-        body{background-color: cadetblue;
-        color: lightsalmon}
-        table{font-size: 180px; text-align: center}
-        td{border:1px solid aqua}
-        
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <table style="width:100%"; style="height: 100%"; >
-  <tr>
-    <td>a</td>
-    <td>b</td> 
-    <td>c</td>
-  </tr>
-  <tr>
-    <td>x</td>
-    <td>y</td> 
-    <td>z</td>
-  </tr>
-  <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-  </tr>
-</table>
-<div></div>
-</body>
+        <title>position some divs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            box{
+                height: 10%;
+                with:10%;
+            }
+            #d1 {
+                position: absolute;
+                left: 45%;
+                width: 10%;
+                top: 45%;
+                height: 10%;
+               
+                background-color: lightsalmon
+                
+            }
+            #d2 {
+                position: absolute; 
+                    left: 50%;
+                    width: 10%;
+                    top: 50%;
+                    opacity: 0.5;
+                    height: 10%;
+                    background-color: blueviolet;
+                    z-index: 100%;
+            }
+            #d3{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width:5%;
+                height: 20%;
+                opacity: 0.5;
+                background-color: yellowgreen;
+                z-index: 100%;
+                   
+                    
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1" ></div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+    </body>
 </html>
