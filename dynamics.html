@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>cs102</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <style>
+            #outher {
+                position: absolute;
+                    left: 45%;
+                 top: 45%;
+                 background-color: lightseagreen;
+                 width: 4em;
+                     height: 4em;}
+           #inner {
+                         top: 45%;
+                             left:45%;
+                             clear: both;
+                             vertical-align: middle;
+                             text-align: center;
+                             background-color: darkgoldenrod;
+                                 color:indianred;
+                     }
+                     }
+                  
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outher">
+            <span id="inner">
+                hello
+            </span>
+        </div>
+        <script>
+            $('#inner') .hover (
+                    function() {
+                $(this) .css("background-color","green");
+            }, functiion(){
+                $(this).css("background-color","blue");
+            }
+                    );
+            
+            $('inner').cick{
+                function() {
+                    window.location="http://www.hello.de" ;
+                
+                }
+            }
+                )
+        
+                
+            
+            </script>
+    </body>
+</html>
