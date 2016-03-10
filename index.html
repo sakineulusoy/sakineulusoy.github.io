@@ -6,34 +6,103 @@ and open the template in the editor.
 -->
 <html>
     <head>
-    <title>cs102</title>
+    <title>CS-102</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
 <body>
     <style>
-    body{ background-color: blanchedalmond;}
-    #d1{ font-size: 45px;
-    color: indigo;
-    text-align: center;
-    position: absolute;
-    top: 45%;
-    left: 30%;}
-    h1{
-      font-size:70px;
+        body{ background-color: darkgrey;
+        }
+      h1 {
+      font-size: xx-large;
       font-family: cursive;
       text-align: center;
-      color: red;
+      color: brown;
       position: absolute;
       top: 20%;
       left:20%;
-    }
-    </style>
-    <h1> Welcome To My Website!</h1>
-<div id="d1">
-        
-    <a href="form.html"> click here to fill out the form! </a>
+            
+        }
+    #inner {
+        color: white;
+        font-size: large;
+        cursor: pointer;
+        position: absolute;
+        top: 34%;
+        left: 20%;
+    font-weight: bold;}
     
+    #d1 {
+        color: red;
+        font-size: large;
+        cursor: pointer;
+        position: absolute;
+        top: 34%;
+        left: 28%;
+    font-weight: bold;}
+    #d2 { 
+         color:yellow;
+        font-size: large;
+        cursor: pointer;
+        position: absolute;
+        top: 34%;
+        left: 39%;
+        font-weight: bold;
+    }
+            
+            
+    
+</style>
+<div> 
+    <span id="inner"> BEŞİKTAŞ </span> 
+    <span id="d1"> GALATASARAY </span>
+    <span id="d2"> FENERHABÇE </span>
 </div>
-</body>
+<script>
+    $("#inner").hover(
+            function() {
+                $(this).css("background-color", "darkgrey");
+            },
+            function(){
+                $(this).css("background-color","black");
+            }
+                    );
+             $('#inner').click(
+                function() {
+                    window.location = "http://www.bjk.com.tr/tr";
+                }
+            );
+     $("#d1").hover(
+            function() {
+                $(this).css("background-color", "darkgrey");
+            },
+            function(){
+                $(this).css("background-color","yellow");
+            }
+                    );
+             $('#d1').click(
+                function() {
+                    window.location = "http://www.galatasaray.org/";
+                }
+            );
+     $("#d2").hover(
+            function() {
+                $(this).css("background-color", "darkgrey");
+            },
+            function(){
+                $(this).css("background-color","blue");
+            }
+                    );
+             $('#d2').click(
+                function() {
+                    window.location = "http://www.fenerbahce.org/";
+                }
+            );
+
+                    </script>
+<h1> Click to go to the website of your favorite team! </h1>
+
+
 </html>
